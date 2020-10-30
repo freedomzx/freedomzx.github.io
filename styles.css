@@ -1,5 +1,7 @@
 body{
     font-family: "Lato", sans-serif;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
     margin: 0;
   }
   
@@ -11,7 +13,7 @@ body{
   .header {
     padding: 40px;
     text-align: center;
-    background: #1ba7d1;
+    background: #8d93ab;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -24,9 +26,9 @@ body{
   .tab{
       float: left;
       /*border: 1px solid rgb(0, 0, 0);*/
-      width: 10%;
+      width: 15%;
       height: 711px;
-      background-color: black;
+      background-color: #393b44;
   }
 
   .tab button {
@@ -54,9 +56,10 @@ body{
   .tabcontent{
       float: left;
       padding: 0px 12px;
-      width:75%;
+      width:85%;
       border-left: none;
       height: 711px;
+      background-color: #d6e0f0;
   }
 
   /* footer */
@@ -86,5 +89,5 @@ body{
     .myblue,
     .myblue:hover{
       color:#000!important;
-      background-color:#1ba7d1!important
+      background-color:#f1f3f8!important
     }
