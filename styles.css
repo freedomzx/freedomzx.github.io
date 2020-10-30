@@ -1,6 +1,6 @@
 body{
     font-family: "Lato", sans-serif;
-    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-y: hidden; /* Hide vertical scrollbar */ 
     overflow-x: hidden; /* Hide horizontal scrollbar */
     margin: 0;
   }
