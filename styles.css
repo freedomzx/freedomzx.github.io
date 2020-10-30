@@ -13,7 +13,7 @@ body{
   .header {
     padding: 40px;
     text-align: center;
-    background: #8d93ab;
+    background: #023e8a;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -26,9 +26,9 @@ body{
   .tab{
       float: left;
       /*border: 1px solid rgb(0, 0, 0);*/
-      width: 15%;
+      width: 12%;
       height: 711px;
-      background-color: #393b44;
+      background-color: black;
   }
 
   .tab button {
@@ -56,14 +56,14 @@ body{
   .tabcontent{
       float: left;
       padding: 0px 12px;
-      width:85%;
+      width:88%;
       border-left: none;
       height: 711px;
       background-color: #d6e0f0;
   }
 
   /* footer */
-  .bottom {
+  .footer {
     text-align: center;
     background: #8f8e8d;
     color: white;
@@ -71,6 +71,7 @@ body{
   }
 
   /* other */
+  /* animate text coming from right */
   .from-right{
       position:relative;
       animation: animateright 0.4s
@@ -86,8 +87,25 @@ body{
         }
     }
 
-    .myblue,
-    .myblue:hover{
+      /* animate text coming from left */
+  .from-left{
+    position:relative;
+    animation:animateleft 0.4s
+  }
+  
+  @keyframes animateleft{
+    from{
+      left:-300px;
+      opacity:0
+    } to{
+      left:0;
+      opacity:1
+    }
+  }
+
+  /* class for color of tabs */
+    .buttoncolor,
+    .buttoncolor:hover{
       color:#000!important;
       background-color:#f1f3f8!important
     }

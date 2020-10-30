@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
-    <title> Elijah Dela Cruz Ongoco </title>
+    <title> About Elijah </title>
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
@@ -11,34 +11,63 @@
     
     <!-- Top of the page-->
     <div class ="header">
-      <h1> Elijah Dela Cruz Ongoco</h1>
-      <h3> Rutgers - New Brunswick, Class of 2022</h3>
+      <div class = "from-left">
+        <h1> Elijah Dela Cruz Ongoco</h1>
+        <h3> Rutgers - New Brunswick, Class of 2022</h3>
+      </div>
     </div>
     
     <div class = "tab">
-        <button class = "tablinks" onclick = "openPage(event, 'Personal')" id = "defaultOpen"> Personal</button>
+        <button class = "tablinks" onclick = "openPage(event, 'Home')" id = "defaultOpen"> Home </button>
+        <button class = "tablinks" onclick = "openPage(event, 'Personal')"> Personal</button>
         <button class = "tablinks" onclick = "openPage(event, 'Education')"> Education</button>
         <button class = "tablinks" onclick = "openPage(event, 'Work')"> Work</button>
+        <button class = "tablinks" onclick = "openPage(event, 'Contact Me!')"> Contact Info & Links</button>
     </div>
+
+    <div id = "Home" class = "tabcontent">
+        <div class = "from-right">
+          <h1>Welcome to my website!</h1>
+          <p> After some a sudden surge of motivation to learn HTML/CSS/JavaScript, I've made my own webiste! <br><br>
+            Click on the tabs on the left to navigate through the different sections on this page.  
+          </p>
+        </div>
+      </div>
 
     <div id = "Personal" class = "tabcontent">
       <div class = "from-right">
-        <h3>Personal</h3>
+        <h1>Personal</h1>
         <p> test </p>
       </div>
     </div>
 
     <div id="Education" class="tabcontent">
       <div class = "from-right">
-        <h3>Education</h3>
-        <p> test </p>
+        <h1>Education</h1>
+        <h2> About </h2>
+        <p> I am currently an undergraduate student at Rutgers University - New Brunswick who is attempting a Bachelor's of Science in Computer Science and a minor in Cognitive Science.</p>
+        <h2> Course Load</h2>
       </div>
     </div>
 
     <div id="Work" class="tabcontent">
       <div class = "from-right">
-        <h3>Work</h3>
-        <p> test </p>
+        <h1>Work</h1>
+        <p> Open to offers! </p>
+        <h3>My Resume: </h3>
+        <embed src = "C:\Users\Elijah\Documents\Resumes\Elijah Ongoco.pdf" width = "400px" height = "700px"\>
+      </div>
+    </div>
+
+    <div id="Contact Me!" class="tabcontent">
+      <div class = "from-right">
+        <h1>Contact Information</h1>
+        <p> <b>Email:</b> elijah.ongoco@gmail.com <br><br>
+        <b>LinkedIn: </b> https://www.linkedin.com/in/elijah-ongoco-a5bb3b173/ <br><br>
+        <b>GitHub: </b> https://github.com/freedomzx <br><br>
+        <b>Discord: </b> freedomzx#0563 <br><br>
+        Feel free to contact me if you have questions, or just want to talk!
+        </p>
       </div>
     </div>
 
@@ -53,20 +82,20 @@
 
       tablinks = document.getElementsByClassName("tablinks");
       for(i = 0; i < tablinks.length; i++){
-        tablinks[i].className = tablinks[i].className.replace(" myblue", "");
+        tablinks[i].className = tablinks[i].className.replace(" buttoncolor", "");
       }
 
       document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " myblue";
+      evt.currentTarget.className += " buttoncolor";
     }
 
     document.getElementById("defaultOpen").click();
     </script>
     </div>
 
-    <!-- <div class = "bottom">
+     <div class = "footer">
       <h4> Thank you for visiting my page! </h4>
-    </div> -->
+    </div> 
 
   </body>
 
