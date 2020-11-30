@@ -1,6 +1,6 @@
 body{
   font-family: sans-serif;
-  overflow-y: hidden; /* Hide vertical scrollbar */ 
+  overflow-y: scroll; /* Hide vertical scrollbar */ 
   overflow-x: hidden; /* Hide horizontal scrollbar */
   margin: 0;
 }
@@ -27,7 +27,7 @@ body{
     float: left;
     /*border: 1px solid rgb(0, 0, 0);*/
     width: 12%;
-    height: 1300px;
+    height: 1000px;
     background-color: black;
 }
 
@@ -59,9 +59,10 @@ body{
     padding: 0px 12px;
     width: 88%;
     border-left: none;
-    height: 1300px;
+    height: 1000px;
     background-color: #d6e0f0;
 }
+
 
 /* footer */
 .footer {
