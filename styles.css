@@ -11,7 +11,7 @@ body{
 
 /* header of the page */
 .header {
-  padding: 30px;
+  padding: 25px;
   text-align: center;
   background: #023e8a;
   color: white;
@@ -47,11 +47,12 @@ body{
 }
 
 .tab button:hover{
-    background-color: #787878;
+    background-color: gray;
 }
 
 .tab button.active {
-    background-color: #1ba7d1;
+    background-color: white;
+    color: black;
 }
 
 .tabcontent{
