@@ -91,8 +91,8 @@
           <b>Discord Bot "Korone"</b> - <i>Language: Python</i>
         </p>
         <p>
-          A discord chatbot that has a plethora of commands, connecting to many different APIs and even has a storage system for commands in MySQL.  It can tell you the weather, stock information, translate phrases,<br>
-          get information about a wide variety of subjects from Pokemon, scrape live broadcasts from YouTube, and more.  Can be added to a discord server with the following link:<br>
+          A discord chatbot that has a plethora of commands, connecting to many different APIs and even has a storage system for commands in MySQL.  <br>It can tell you the weather, stock information, translate phrases,
+          get information about a wide variety of subjects from Pokemon, scrape live broadcasts from YouTube, and more.  <br>Can be added to a discord server with the following link:
           <a href="https://discord.com/api/oauth2/authorize?client_id=564658974180245522&permissions=339078240&scope=bot" target = "_blank"> Click here to add my bot to a Discord server!</a>
           <br><a href="https://github.com/freedomzx/KoroneBot" target = "_blank">GitHub Page</a>
         </p>
@@ -101,15 +101,16 @@
         </p>
         <p>
           A web app complete with a login page, account creation page, and SQL connectivity via JDBC that allows people to book a train reservation with an imaginary railway company. <br>
-          Hosted using Amazon Web Services' EC2 instance with Apache Tomcat, along with the SQL database being hosted on AWS' RDS service.  Regular users are given commands that allow them to view train information and <br>
+          Hosted using Amazon Web Services' EC2 instance with Apache Tomcat, along with the SQL database being hosted on AWS' RDS service.<br>  Regular users are given commands that allow them to view train information and
           book tickets, and admin accounts also have commands that allow them to edit data.
         </p>
         <p>
           <b>Where's The File?</b> - <i>Language: C</i>
-          <br><a href="https://github.com/freedomzx/WTF" target="_blank">GitHub Page</a>
         </p>
         <p>
-          A version control system for projects that utilizes a server/client model.  Versions are stored and compressed within the server, and the client can request to clone the files of any version.<br>Also developed in a Linux environment, and in collaboration with a partner by utilizing Git.<br>
+          A version control system for projects that utilizes a server/client model.  Versions are stored and compressed within the server, and the client can request to clone the files of any version.
+          <br>Complete with Git's: checkout, update, upgrade, commit, push, create, destroy, add, and remove functions.  Can also configure IP ports, check the current version of a project, get version history, and rollback.
+          <br><a href="https://github.com/freedomzx/WTF" target="_blank">GitHub Page</a>
         </p>
         <p>
           <b>mypthread</b> - <i>Language: C</i>
@@ -152,11 +153,11 @@
 
       tablinks = document.getElementsByClassName("tablinks");
       for(i = 0; i < tablinks.length; i++){
-        tablinks[i].className = tablinks[i].className.replace(" buttoncolor", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
 
       document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " buttoncolor";
+      evt.currentTarget.className += " active";
     }
 
     document.getElementById("defaultOpen").click();
